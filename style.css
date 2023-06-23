@@ -1,0 +1,95 @@
+header
+{
+    background-color: black;
+    padding: 40px;
+}
+
+.titulo-principal
+{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+main
+{
+    background-color: lightgray;
+}
+
+.indicacion
+{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.palabra
+{
+    margin-top: 20px;
+    margin-left: 170px;
+    padding: 10px 25px;
+    width: 70%;
+
+}
+
+.encriptar
+{
+    margin-top: 20px;
+    margin-left: 510px;
+    padding: 10px 20px 10px 20px;
+    background-color: black;
+    color: white;
+}
+
+.desencriptar
+{
+    margin-left: 20px;
+    padding: 10px 20px 10px 20px;
+    background-color: black;
+    color: white;
+}
+
+.palabra-encriptada
+{
+    margin-top: 50px;
+    margin-left: 100px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.resultado-encriptada
+{
+    margin-left: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.palabra-desencriptada
+{
+    margin-top: 20px;
+    margin-left: 100px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.resultado-desencriptada
+{
+    margin-left: 100px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+footer
+{
+    background-color: black;
+    padding: 40px;
+}
+
+.firma
+{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}

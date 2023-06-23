@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="es">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de texto</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+    </head>
+	<body>
+		<header>
+			<h1 class="titulo-principal">ENCRIPTADOR DE TEXTO</h1>
+		</header>
+		<main>
+			<p class="indicacion">Ingrese un mensaje para ser encriptada</p>
+			<input type="text" id="palabra" class="palabra" required/>
+			<button class="encriptar" id = "boton1">Encriptar palabra</button> 
+			<button class="desencriptar" id = "boton2">Desencriptar palabra</button>
+			<p class="palabra-encriptada">Esta es la palabra encriptada:</p>
+			<textarea class="resultado-encriptada" id="r" rows="3" cols="50" ></textarea>
+			<p class="palabra-desencriptada">Esta es la palabra desencriptada</p>
+			<textarea class="resultado-desencriptada" id="p" rows="3" cols="50" ></textarea>
+		</main>
+		<footer>
+            <p class="firma">David Nicolas Cardenas Saurez</p>
+        </footer>
+	</body>
+</html>
+
+<script>
+
+	var texto;
+	var textoCifrado;
+	var input = document.querySelector("input");
+	input.focus();
+
+	function encriptar()
+	{
+		texto = document.querySelector("input").value; 
+		textoCifrado= texto.replace(/e/ig,"enter");
+		textoCifrado=textoCifrado.replace(/o/ig,"ober");
+		textoCifrado=textoCifrado.replace(/i/ig,"imes");
+		textoCifrado=textoCifrado.replace(/a/ig,"ai");
+		textoCifrado=textoCifrado.replace(/u/ig,"ufat");
+
+		document.getElementById("r").innerHTML = textoCifrado;
+	}
+
+	function desencriptar()
+	{
+		texto = document.querySelector("input").value.toLowerCase();
+		textoCifrado = texto.replace(/enter/ig,"e");
+		textoCifrado = textoCifrado.replace(/ober/ig,"o");
+		textoCifrado = textoCifrado.replace(/imes/ig,"i");
+		textoCifrado = textoCifrado.replace(/ai/ig,"a");
+		textoCifrado = textoCifrado.replace(/ufat/ig,"u");
+
+		document.getElementById("p").innerHTML = textoCifrado;
+	}
+
+	var button1 = document.querySelector("#boton1");
+	button1.onclick = encriptar;
+
+	var button2 = document.querySelector("#boton2");
+	button2.onclick = desencriptar;
+
+</script> 
